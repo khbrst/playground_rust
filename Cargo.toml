@@ -1,7 +1,5 @@
-[package]
-name = "guessing_game"
-version = "0.1.0"
-authors = ["Yoon Youngho <khbrst@gmail.com>"]
+[workspace]
 
-[dependencies]
-rand="0.3.0"
+members = [
+  "guessing_game",
+]
