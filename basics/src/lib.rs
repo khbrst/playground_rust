@@ -8,8 +8,9 @@ pub fn test_smart_pointers() {
 }
 
 pub fn test_concurrency() {
-  concurrency::value_move_into_closure();
+  concurrency::threads::value_move_into_closure();
   concurrency::message_passing::send_single_message();
   concurrency::message_passing::send_multiple_messages();
   concurrency::message_passing::send_messages_from_multiple_producer();
+  concurrency::share::lock_use_mutex();
 }

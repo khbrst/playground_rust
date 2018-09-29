@@ -1,13 +1,15 @@
-use std::thread;
+pub mod threads {
+  use std::thread;
 
-pub fn value_move_into_closure() {
-  let v = vec![1, 2, 3];
+  pub fn value_move_into_closure() {
+    let v = vec![1, 2, 3];
 
-  let handle = thread::spawn(move || {
-    println!("Here's a vector: {:?}", v);
-  });
+    let handle = thread::spawn(move || {
+      println!("Here's a vector: {:?}", v);
+    });
 
-  handle.join().unwrap();
+    handle.join().unwrap();
+  }
 }
 
 pub mod message_passing {
@@ -84,5 +86,31 @@ pub mod message_passing {
     for received in rx {
       println!("Got: {}", received);
     }
+  }
+}
+
+pub mod share {
+  use std::sync::{Arc, Mutex};
+  use std::thread;
+
+  pub fn lock_use_mutex() {
+    let counter = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+      let counter = Arc::clone(&counter);
+      let handle = thread::spawn(move || {
+        let mut num = counter.lock().unwrap();
+
+        *num += 1;
+      });
+      handles.push(handle);
+    }
+
+    for handle in handles {
+      handle.join().unwrap();
+    }
+
+    println!("Result: {}", *counter.lock().unwrap());
   }
 }
