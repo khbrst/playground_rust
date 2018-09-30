@@ -1,5 +1,6 @@
 mod smart_pointers;
 mod concurrency;
+mod oop;
 
 pub fn test_smart_pointers() {
   smart_pointers::box_save_to_heap();
@@ -13,4 +14,8 @@ pub fn test_concurrency() {
   concurrency::message_passing::send_multiple_messages();
   concurrency::message_passing::send_messages_from_multiple_producer();
   concurrency::share::lock_use_mutex();
+}
+
+pub fn test_oop() {
+  oop::implementing_the_trait();
 }
