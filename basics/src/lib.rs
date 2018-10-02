@@ -18,5 +18,6 @@ pub fn test_concurrency() {
 
 pub fn test_oop() {
   oop::implementing_the_trait();
-  oop::implementing_state_design_pattern();
+  oop::implementing_state_design_pattern_as_trait();
+  oop::implementing_state_design_pattern_as_type();
 }

@@ -1,7 +1,7 @@
-mod blog;
+mod blog_trait;
+mod blog_type;
 mod gui;
 
-use self::blog::Post;
 use self::gui::{Button, Screen, SelectBox};
 
 pub fn implementing_the_trait() {
@@ -27,7 +27,9 @@ pub fn implementing_the_trait() {
   screen.run();
 }
 
-pub fn implementing_state_design_pattern() {
+pub fn implementing_state_design_pattern_as_trait() {
+  use self::blog_trait::Post;
+
   let mut post = Post::new();
 
   post.add_text("I ate a salad for lunch today");
@@ -37,5 +39,19 @@ pub fn implementing_state_design_pattern() {
   assert_eq!("", post.content());
 
   post.approve();
+  assert_eq!("I ate a salad for lunch today", post.content());
+}
+
+pub fn implementing_state_design_pattern_as_type() {
+  use self::blog_type::Post;
+
+  let mut post = Post::new();
+
+  post.add_text("I ate a salad for lunch today");
+
+  let post = post.request_review();
+
+  let post = post.approve();
+
   assert_eq!("I ate a salad for lunch today", post.content());
 }
