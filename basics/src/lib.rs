@@ -1,6 +1,7 @@
-mod smart_pointers;
 mod concurrency;
 mod oop;
+mod patterns;
+mod smart_pointers;
 
 pub fn test_smart_pointers() {
   smart_pointers::box_save_to_heap();
@@ -20,4 +21,10 @@ pub fn test_oop() {
   oop::implementing_the_trait();
   oop::implementing_state_design_pattern_as_trait();
   oop::implementing_state_design_pattern_as_type();
+}
+
+pub fn test_patterns() {
+  patterns::destructure_structs();
+  patterns::destructure_structs_in_match();
+  patterns::destructure_enums();
 }
