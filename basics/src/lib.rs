@@ -52,5 +52,8 @@ pub fn test_advanced() {
   advanced::unsafe_rust::create_safe_abstract_on_unsafe_code();
   advanced::unsafe_rust::use_the_ffi();
   advanced::unsafe_rust::access_to_static_mutable_variable();
+  advanced::lifetime::lifetime_subtyping();
+  advanced::lifetime::lifetime_bound();
+  advanced::lifetime::lifetime_of_trait_object();
   println!("");
 }
