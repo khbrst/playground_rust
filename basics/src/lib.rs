@@ -46,11 +46,11 @@ pub fn test_patterns() {
 
 pub fn test_advanced() {
   println!("* test_advanced");
-  advanced::create_raw_pointer();
-  advanced::dereference_raw_pointer();
-  advanced::call_the_dangerous_function();
-  advanced::create_safe_abstract_on_unsafe_code();
-  advanced::use_the_ffi();
-  advanced::access_to_static_mutable_variable();
+  advanced::unsafe_rust::create_raw_pointer();
+  advanced::unsafe_rust::dereference_raw_pointer();
+  advanced::unsafe_rust::call_the_dangerous_function();
+  advanced::unsafe_rust::create_safe_abstract_on_unsafe_code();
+  advanced::unsafe_rust::use_the_ffi();
+  advanced::unsafe_rust::access_to_static_mutable_variable();
   println!("");
 }
