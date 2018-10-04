@@ -1,3 +1,4 @@
+mod advanced;
 mod concurrency;
 mod oop;
 mod patterns;
@@ -40,5 +41,16 @@ pub fn test_patterns() {
   patterns::create_mutable_reference();
   patterns::match_guards();
   patterns::at_operator_bindings();
+  println!("");
+}
+
+pub fn test_advanced() {
+  println!("* test_advanced");
+  advanced::create_raw_pointer();
+  advanced::dereference_raw_pointer();
+  advanced::call_the_dangerous_function();
+  advanced::create_safe_abstract_on_unsafe_code();
+  advanced::use_the_ffi();
+  advanced::access_to_static_mutable_variable();
   println!("");
 }

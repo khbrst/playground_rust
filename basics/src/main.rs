@@ -5,4 +5,5 @@ fn main() {
   basics::test_concurrency();
   basics::test_oop();
   basics::test_patterns();
+  basics::test_advanced();
 }
