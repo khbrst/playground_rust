@@ -3,4 +3,5 @@
 members = [
   "guessing_game",
   "basics",
+  "webserver",
 ]
