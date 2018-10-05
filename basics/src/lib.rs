@@ -55,5 +55,9 @@ pub fn test_advanced() {
   advanced::lifetime::lifetime_subtyping();
   advanced::lifetime::lifetime_bound();
   advanced::lifetime::lifetime_of_trait_object();
+  advanced::traits::default_generic_type_parameter_and_operator_overloading();
+  advanced::traits::use_fully_qualified_syntax();
+  advanced::traits::use_super_trait();
+  advanced::traits::use_newtype_pattern();
   println!("");
 }
