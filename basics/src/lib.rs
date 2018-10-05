@@ -59,5 +59,7 @@ pub fn test_advanced() {
   advanced::traits::use_fully_qualified_syntax();
   advanced::traits::use_super_trait();
   advanced::traits::use_newtype_pattern();
+  advanced::types::use_type_alias();
+  advanced::types::allow_dynamically_sized_type_with_generic();
   println!("");
 }
