@@ -61,5 +61,7 @@ pub fn test_advanced() {
   advanced::traits::use_newtype_pattern();
   advanced::types::use_type_alias();
   advanced::types::allow_dynamically_sized_type_with_generic();
+  advanced::fn_closure::use_function_pointer();
+  advanced::fn_closure::returns_closure();
   println!("");
 }
