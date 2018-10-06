@@ -11,18 +11,18 @@ Practice Rust Programming Language
 
 - [Rust Programming Language - Official site](https://www.rust-lang.org)
 	- [Documentation](https://doc.rust-lang.org/)
-		1. Learn Rust
+		- Learn Rust
 			- [Book](https://doc.rust-lang.org/book/)
 				- [1판 한글 번역](https://www.penflip.com/sarojaba/rust-doc-korean)
 				- [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko))
 			- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
-		1. Use Rust
+		- Use Rust
 			- [The Standard Library](https://doc.rust-lang.org/std/index.html)
 			- [The Rustc Book](https://doc.rust-lang.org/rustc/index.html)
 			- [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
 			- [The Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html)
 			- [Rust Compiler Error Index](https://doc.rust-lang.org/error-index.html)
-		1. Master Rust
+		- Master Rust
 			- [The Reference](https://doc.rust-lang.org/reference/index.html)
 			- [The Rustonomicon](https://doc.rust-lang.org/nomicon/index.html)
 			- [The Unstable Book](https://doc.rust-lang.org/unstable-book/index.html)
