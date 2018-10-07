@@ -6,7 +6,7 @@ Practice Rust Programming Language
 
 ## Roadmap
 
-- [Book](https://doc.rust-lang.org/book/): [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko)): 6797a0784bf48bc8601294e6e429f6bf25507e8e
+- [Book](https://doc.rust-lang.org/book/): [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko)): Completed
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html): Work In Progress
 
 # References
