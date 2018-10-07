@@ -1,3 +1,4 @@
+mod custom_types;
 mod hello_world;
 mod primitives;
 
@@ -16,4 +17,13 @@ pub fn run_primitives() {
   primitives::check_literals_and_operators();
   primitives::check_tuples();
   primitives::check_arrays_and_slices();
+}
+
+pub fn run_custom_types() {
+  custom_types::check_structs();
+  custom_types::check_enums();
+  custom_types::use_enums();
+  custom_types::c_like_enums();
+  custom_types::linked_list_enums();
+  custom_types::check_constants();
 }
