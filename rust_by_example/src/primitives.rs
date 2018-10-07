@@ -69,6 +69,10 @@ impl Display for Matrix {
   }
 }
 
+fn transpose(matrix: Matrix) -> Matrix {
+  Matrix(matrix.0, matrix.2, matrix.1, matrix.3)
+}
+
 pub fn check_tuples() {
   // A tuple with a bunch of different types
   let long_tuple = (
@@ -107,5 +111,6 @@ pub fn check_tuples() {
   println!("{:?}, {:?}, {:?}, {:?}", a, b, c, d);
 
   let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
-  println!("{}", matrix);
+  println!("Matrix:\n{}", matrix);
+  println!("Transpose:\n{}", transpose(matrix));
 }
