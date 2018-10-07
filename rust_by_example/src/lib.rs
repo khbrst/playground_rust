@@ -15,4 +15,5 @@ pub fn run_primitives() {
   primitives::check_basics();
   primitives::check_literals_and_operators();
   primitives::check_tuples();
+  primitives::check_arrays_and_slices();
 }
