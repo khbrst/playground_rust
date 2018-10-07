@@ -7,7 +7,7 @@ Practice Rust Programming Language
 ## Roadmap
 
 - [Book](https://doc.rust-lang.org/book/): [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko)): Completed
-- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html): Work In Progress
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example)): Work In Progress
 
 # References
 
@@ -17,7 +17,7 @@ Practice Rust Programming Language
 			- [Book](https://doc.rust-lang.org/book/)
 				- [1판 한글 번역](https://www.penflip.com/sarojaba/rust-doc-korean)
 				- [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko))
-			- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)
+			- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example))
 		- Use Rust
 			- [The Standard Library](https://doc.rust-lang.org/std/index.html)
 			- [The Rustc Book](https://doc.rust-lang.org/rustc/index.html)

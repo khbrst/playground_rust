@@ -6,4 +6,5 @@ members = [
   "webserver",
   "appendix",
   "hello_macro",
+  "rust_by_example",
 ]
