@@ -49,6 +49,8 @@ pub fn check_literals_and_operators() {
   println!("One million is written as {}", 1_000_000u32);
 }
 
+use std::fmt::{self, Display, Formatter};
+
 // Tuples can be used as function arguments and as return values
 fn reverse(pair: (i32, bool)) -> (bool, i32) {
   // `let` can be used to bind the members of a tuple to variables
@@ -60,6 +62,12 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
 // The following struct is for the activity.
 #[derive(Debug)]
 struct Matrix(f32, f32, f32, f32);
+
+impl Display for Matrix {
+  fn fmt(&self, f: &mut Formatter) -> fmt::Result {
+    write!(f, "({}, {})\n({}, {})", self.0, self.1, self.2, self.3)
+  }
+}
 
 pub fn check_tuples() {
   // A tuple with a bunch of different types
@@ -99,5 +107,5 @@ pub fn check_tuples() {
   println!("{:?}, {:?}, {:?}, {:?}", a, b, c, d);
 
   let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
-  println!("{:?}", matrix);
+  println!("{}", matrix);
 }
