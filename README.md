@@ -1,5 +1,7 @@
 # Playground Rust
 
+[![Build Status](https://travis-ci.com/khbrst/playground_rust.svg?branch=master)](https://travis-ci.com/khbrst/playground_rust)
+
 Practice Rust Programming Language
 
 ## Roadmap
