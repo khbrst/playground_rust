@@ -65,7 +65,7 @@ struct Matrix(f32, f32, f32, f32);
 
 impl Display for Matrix {
   fn fmt(&self, f: &mut Formatter) -> fmt::Result {
-    write!(f, "({}, {})\n({}, {})", self.0, self.1, self.2, self.3)
+    write!(f, "( {} {} )\n( {} {} )", self.0, self.1, self.2, self.3)
   }
 }
 
