@@ -1,6 +1,7 @@
 mod custom_types;
 mod hello_world;
 mod primitives;
+mod variable_bindings;
 
 pub fn run_hello_world() {
   hello_world::print_hello_world();
@@ -26,4 +27,11 @@ pub fn run_custom_types() {
   custom_types::c_like_enums();
   custom_types::linked_list_enums();
   custom_types::check_constants();
+}
+
+pub fn run_variable_bindings() {
+  variable_bindings::infer_type_by_compiler();
+  variable_bindings::use_mutable_binding();
+  variable_bindings::check_scope_and_shadowing();
+  variable_bindings::declare_first();
 }
