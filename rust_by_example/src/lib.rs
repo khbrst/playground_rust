@@ -1,6 +1,7 @@
 mod custom_types;
 mod hello_world;
 mod primitives;
+mod types;
 mod variable_bindings;
 
 pub fn run_hello_world() {
@@ -34,4 +35,11 @@ pub fn run_variable_bindings() {
   variable_bindings::use_mutable_binding();
   variable_bindings::check_scope_and_shadowing();
   variable_bindings::declare_first();
+}
+
+pub fn run_types() {
+  types::casting();
+  types::literals();
+  types::inference();
+  types::aliasing();
 }
