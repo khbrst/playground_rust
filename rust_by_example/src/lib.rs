@@ -4,6 +4,7 @@ mod hello_world;
 mod primitives;
 mod types;
 mod variable_bindings;
+mod expressions;
 
 pub fn run_hello_world() {
   hello_world::print_hello_world();
@@ -49,4 +50,8 @@ pub fn run_conversion() {
   conversion::from_and_into();
   conversion::to_string();
   conversion::parsing_a_string();
+}
+
+pub fn run_expressions() {
+  expressions::check();
 }

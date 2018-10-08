@@ -7,4 +7,5 @@ fn main() {
   rust_by_example::run_variable_bindings();
   rust_by_example::run_types();
   rust_by_example::run_conversion();
+  rust_by_example::run_expressions();
 }
