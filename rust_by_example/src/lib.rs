@@ -1,3 +1,4 @@
+mod conversion;
 mod custom_types;
 mod hello_world;
 mod primitives;
@@ -42,4 +43,10 @@ pub fn run_types() {
   types::literals();
   types::inference();
   types::aliasing();
+}
+
+pub fn run_conversion() {
+  conversion::from_and_into();
+  conversion::to_string();
+  conversion::parsing_a_string();
 }
