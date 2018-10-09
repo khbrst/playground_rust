@@ -1,10 +1,11 @@
 mod conversion;
 mod custom_types;
+mod expressions;
+mod flow_control;
 mod hello_world;
 mod primitives;
 mod types;
 mod variable_bindings;
-mod expressions;
 
 pub fn run_hello_world() {
   hello_world::print_hello_world();
@@ -54,4 +55,9 @@ pub fn run_conversion() {
 
 pub fn run_expressions() {
   expressions::check();
+}
+
+pub fn run_flow_control() {
+  flow_control::if_else();
+  flow_control::do_loop();
 }
