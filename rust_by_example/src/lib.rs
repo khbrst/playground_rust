@@ -60,4 +60,17 @@ pub fn run_expressions() {
 pub fn run_flow_control() {
   flow_control::if_else();
   flow_control::do_loop();
+  flow_control::returning_from_loop();
+  flow_control::run_while();
+  flow_control::for_and_ranges();
+  flow_control::for_and_iterators();
+  flow_control::do_match();
+  flow_control::destructuring_tuples_use_match();
+  flow_control::destructuring_enums_use_match();
+  flow_control::destructuring_pointers_use_match();
+  flow_control::destructuring_structs();
+  flow_control::match_guards();
+  flow_control::match_binding();
+  flow_control::if_let();
+  flow_control::while_let();
 }
