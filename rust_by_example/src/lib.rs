@@ -2,6 +2,7 @@ mod conversion;
 mod custom_types;
 mod expressions;
 mod flow_control;
+mod functions;
 mod hello_world;
 mod primitives;
 mod types;
@@ -73,4 +74,9 @@ pub fn run_flow_control() {
   flow_control::match_binding();
   flow_control::if_let();
   flow_control::while_let();
+}
+
+pub fn run_functions() {
+  functions::call_functions();
+  functions::call_methods();
 }

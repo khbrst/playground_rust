@@ -9,4 +9,5 @@ fn main() {
   rust_by_example::run_conversion();
   rust_by_example::run_expressions();
   rust_by_example::run_flow_control();
+  rust_by_example::run_functions();
 }
