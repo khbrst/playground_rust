@@ -79,4 +79,8 @@ pub fn run_flow_control() {
 pub fn run_functions() {
   functions::call_functions();
   functions::call_methods();
+  functions::closure();
+  functions::closure_capturing();
+  functions::closure_capturing_use_move();
+  functions::closure_as_input_parameter();
 }
