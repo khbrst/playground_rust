@@ -83,4 +83,7 @@ pub fn run_functions() {
   functions::closure_capturing();
   functions::closure_capturing_use_move();
   functions::closure_as_input_parameter();
+  functions::closure_type_anonymity();
+  functions::closure_input_function();
+  functions::closure_as_output_parameter();
 }

@@ -243,28 +243,28 @@ pub fn closure_capturing_use_move() {
   // available and uncommenting above line will not cause an error.
 }
 
-// A function which takes a closure as an argument and calls it.
-fn apply<F>(f: F)
-where
-  // The closure takes no input and returns nothing.
-  F: FnOnce(),
-{
-  // ^ TODO: Try changing this to `Fn` or `FnMut`.
-
-  f();
-}
-
-// A function which takes a closure and returns an `i32`.
-fn apply_to_3<F>(f: F) -> i32
-where
-  // The closure takes an `i32` and returns an `i32`.
-  F: Fn(i32) -> i32,
-{
-  f(3)
-}
-
 pub fn closure_as_input_parameter() {
   use std::mem;
+
+  // A function which takes a closure as an argument and calls it.
+  fn apply<F>(f: F)
+  where
+    // The closure takes no input and returns nothing.
+    F: FnOnce(),
+  {
+    // ^ TODO: Try changing this to `Fn` or `FnMut`.
+
+    f();
+  }
+
+  // A function which takes a closure and returns an `i32`.
+  fn apply_to_3<F>(f: F) -> i32
+  where
+    // The closure takes an `i32` and returns an `i32`.
+    F: Fn(i32) -> i32,
+  {
+    f(3)
+  }
 
   let greeting = "hello";
   // A non-copy type.
@@ -295,4 +295,63 @@ pub fn closure_as_input_parameter() {
   let double = |x| 2 * x;
 
   println!("3 doubled: {}", apply_to_3(double));
+}
+
+pub fn closure_type_anonymity() {
+  // `F` must implement `Fn` for a closure which takes no
+  // inputs and returns nothing - exactly what is required
+  // for `print`.
+  fn apply<F>(f: F)
+  where
+    F: Fn(),
+  {
+    f();
+  }
+
+  let x = 7;
+
+  // Capture `x` into an anonymous type and implement
+  // `Fn` for it. Store it in `print`.
+  let print = || println!("{}", x);
+
+  apply(print);
+}
+
+pub fn closure_input_function() {
+  // Define a function which takes a generic `F` argument
+  // bounded by `Fn`, and calls it
+  fn call_me<F: Fn()>(f: F) {
+    f();
+  }
+
+  // Define a wrapper function satisfying the `Fn` bound
+  fn function() {
+    println!("I'm a function!");
+  }
+
+  // Define a closure satisfying the `Fn` bound
+  let closure = || println!("I'm a closure!");
+
+  call_me(closure);
+  call_me(function);
+}
+
+pub fn closure_as_output_parameter() {
+  fn create_fn() -> Box<Fn()> {
+    let text = "Fn".to_owned();
+
+    Box::new(move || println!("This is a: {}", text))
+  }
+
+  fn create_fnmut() -> Box<FnMut()> {
+    let text = "FnMut".to_owned();
+
+    Box::new(move || println!("This is a: {}", text))
+  }
+
+  let fn_plain = create_fn();
+  let mut fn_mut = create_fnmut();
+
+  fn_plain();
+  fn_mut();
 }
