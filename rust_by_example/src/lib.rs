@@ -1,3 +1,4 @@
+mod attributes;
 mod conversion;
 mod custom_types;
 mod expressions;
@@ -98,4 +99,8 @@ pub fn run_modules() {
   modules::struct_visibility();
   modules::the_use_declaration();
   modules::super_and_self();
+}
+
+pub fn run_attributes() {
+  attributes::cfg();
 }
