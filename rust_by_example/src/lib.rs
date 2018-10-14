@@ -4,6 +4,7 @@ mod expressions;
 mod flow_control;
 mod functions;
 mod hello_world;
+mod modules;
 mod primitives;
 mod types;
 mod variable_bindings;
@@ -90,4 +91,11 @@ pub fn run_functions() {
   functions::closure_iterator_find();
   functions::high_order_functions();
   functions::diverging_functions();
+}
+
+pub fn run_modules() {
+  modules::visibility();
+  modules::struct_visibility();
+  modules::the_use_declaration();
+  modules::super_and_self();
 }
