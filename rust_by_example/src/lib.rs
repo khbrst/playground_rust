@@ -86,4 +86,8 @@ pub fn run_functions() {
   functions::closure_type_anonymity();
   functions::closure_input_function();
   functions::closure_as_output_parameter();
+  functions::closure_iterator_any();
+  functions::closure_iterator_find();
+  functions::high_order_functions();
+  functions::diverging_functions();
 }

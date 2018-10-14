@@ -8,6 +8,7 @@ Practice Rust Programming Language
 
 - [Book](https://doc.rust-lang.org/book/): [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko)): Completed
 - [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example)): Work In Progress
+	- `iter` vs `into_iter`
 
 # References
 
