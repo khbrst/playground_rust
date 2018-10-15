@@ -12,4 +12,5 @@ fn main() {
   rust_by_example::run_functions();
   rust_by_example::run_modules();
   rust_by_example::run_attributes();
+  rust_by_example::run_generics();
 }

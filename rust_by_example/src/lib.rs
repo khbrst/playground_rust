@@ -4,6 +4,7 @@ mod custom_types;
 mod expressions;
 mod flow_control;
 mod functions;
+mod generics;
 mod hello_world;
 mod modules;
 mod primitives;
@@ -103,4 +104,19 @@ pub fn run_modules() {
 
 pub fn run_attributes() {
   attributes::cfg();
+}
+
+pub fn run_generics() {
+  generics::basic();
+  generics::functions();
+  generics::implementation();
+  generics::traits();
+  generics::bounds();
+  generics::empty_bounds();
+  generics::multiple_bounds();
+  generics::where_clauses();
+  generics::newtype_idiom();
+  generics::associated_types();
+  generics::phantom_type_parameters();
+  generics::phantom_type_parameters_unit_clarification();
 }
