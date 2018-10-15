@@ -8,6 +8,7 @@ mod generics;
 mod hello_world;
 mod modules;
 mod primitives;
+mod scoping_rules;
 mod types;
 mod variable_bindings;
 
@@ -119,4 +120,8 @@ pub fn run_generics() {
   generics::associated_types();
   generics::phantom_type_parameters();
   generics::phantom_type_parameters_unit_clarification();
+}
+
+pub fn run_scoping_rules() {
+  scoping_rules::run_raii();
 }

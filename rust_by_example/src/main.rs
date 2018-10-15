@@ -13,4 +13,5 @@ fn main() {
   rust_by_example::run_modules();
   rust_by_example::run_attributes();
   rust_by_example::run_generics();
+  rust_by_example::run_scoping_rules();
 }
