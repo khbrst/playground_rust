@@ -125,4 +125,5 @@ pub fn run_generics() {
 pub fn run_scoping_rules() {
   scoping_rules::run_raii();
   scoping_rules::run_ownership_and_moves();
+  scoping_rules::run_borrowing();
 }
