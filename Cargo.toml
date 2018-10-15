@@ -1,10 +1,10 @@
 [workspace]
 
 members = [
-  "guessing_game",
-  "basics",
-  "webserver",
-  "appendix",
-  "hello_macro",
+  "trpl/guessing_game",
+  "trpl/basics",
+  "trpl/webserver",
+  "trpl/appendix",
+  "trpl/hello_macro",
   "rust_by_example",
 ]
