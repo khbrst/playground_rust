@@ -1,4 +1,5 @@
 mod borrowing;
+mod lifetimes;
 mod ownership_and_moves;
 mod raii;
 
@@ -18,4 +19,16 @@ pub fn run_borrowing() {
   borrowing::freezing();
   borrowing::aliasing();
   borrowing::the_ref_pattern();
+}
+
+pub fn run_lifetimes() {
+  lifetimes::basic();
+  lifetimes::explicit_annotation();
+  lifetimes::functions();
+  lifetimes::methods();
+  lifetimes::structs();
+  lifetimes::bounds();
+  lifetimes::coercion();
+  lifetimes::statics();
+  lifetimes::elision();
 }
