@@ -9,6 +9,7 @@ mod hello_world;
 mod modules;
 mod primitives;
 mod scoping_rules;
+mod traits;
 mod types;
 mod variable_bindings;
 
@@ -127,4 +128,13 @@ pub fn run_scoping_rules() {
   scoping_rules::run_ownership_and_moves();
   scoping_rules::run_borrowing();
   scoping_rules::run_lifetimes();
+}
+
+pub fn run_traits() {
+  traits::basic();
+  traits::derive();
+  traits::operator_overloading();
+  traits::do_drop();
+  traits::iterators();
+  traits::clone();
 }
