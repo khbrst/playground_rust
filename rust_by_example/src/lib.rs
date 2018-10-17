@@ -6,6 +6,7 @@ mod flow_control;
 mod functions;
 mod generics;
 mod hello_world;
+mod macro_rules;
 mod modules;
 mod primitives;
 mod scoping_rules;
@@ -137,4 +138,13 @@ pub fn run_traits() {
   traits::do_drop();
   traits::iterators();
   traits::clone();
+}
+
+pub fn run_macro_rules() {
+  macro_rules::basic();
+  macro_rules::designators();
+  macro_rules::overload();
+  macro_rules::repeat();
+  macro_rules::dsl();
+  macro_rules::variadic_interfaces();
 }
