@@ -16,4 +16,5 @@ fn main() {
   rust_by_example::run_scoping_rules();
   rust_by_example::run_traits();
   rust_by_example::run_macro_rules();
+  rust_by_example::run_error_handling();
 }

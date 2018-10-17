@@ -1,6 +1,7 @@
 mod attributes;
 mod conversion;
 mod custom_types;
+mod error_handling;
 mod expressions;
 mod flow_control;
 mod functions;
@@ -147,4 +148,12 @@ pub fn run_macro_rules() {
   macro_rules::repeat();
   macro_rules::dsl();
   macro_rules::variadic_interfaces();
+}
+
+pub fn run_error_handling() {
+  error_handling::panic();
+  error_handling::run_option_and_unwrap();
+  error_handling::run_result();
+  error_handling::run_multiple_error_types();
+  error_handling::run_iterating_over_results();
 }
