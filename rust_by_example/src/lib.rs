@@ -11,6 +11,7 @@ mod macro_rules;
 mod modules;
 mod primitives;
 mod scoping_rules;
+mod std_library_types;
 mod traits;
 mod types;
 mod variable_bindings;
@@ -156,4 +157,9 @@ pub fn run_error_handling() {
   error_handling::run_result();
   error_handling::run_multiple_error_types();
   error_handling::run_iterating_over_results();
+}
+
+pub fn run_std_library_types() {
+  std_library_types::box_and_stack_and_heap();
+  std_library_types::vectors();
 }
