@@ -12,6 +12,7 @@ mod modules;
 mod primitives;
 mod scoping_rules;
 mod std_library_types;
+mod std_misc;
 mod traits;
 mod types;
 mod variable_bindings;
@@ -172,4 +173,10 @@ pub fn run_std_library_types() {
   std_library_types::hashmap();
   std_library_types::hashmap_alternate_custom_key_types();
   std_library_types::hashset();
+}
+
+pub fn run_std_misc() {
+  std_misc::threads();
+  std_misc::threads_map_reduce();
+  std_misc::improved_threads_map_reduce();
 }
