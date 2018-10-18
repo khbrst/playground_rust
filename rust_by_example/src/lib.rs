@@ -162,4 +162,14 @@ pub fn run_error_handling() {
 pub fn run_std_library_types() {
   std_library_types::box_and_stack_and_heap();
   std_library_types::vectors();
+  std_library_types::strings();
+  std_library_types::string_literals_and_escapes();
+  std_library_types::raw_string_literals();
+  std_library_types::byte_strings();
+  std_library_types::option();
+  std_library_types::result();
+  std_library_types::result_question_mark();
+  std_library_types::hashmap();
+  std_library_types::hashmap_alternate_custom_key_types();
+  std_library_types::hashset();
 }
