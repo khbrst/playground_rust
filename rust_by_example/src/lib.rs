@@ -170,7 +170,5 @@ pub fn run_std_library_types() {
 }
 
 pub fn run_std_misc() {
-  std_misc::threads();
-  std_misc::threads_map_reduce();
-  std_misc::improved_threads_map_reduce();
+  std_misc::run_threads();
 }

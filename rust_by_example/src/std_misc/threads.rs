@@ -1,7 +1,7 @@
 extern crate num_cpus;
 
 // This is the `main` thread
-pub fn threads() {
+pub fn basic() {
   use std::thread;
 
   static NTHREADS: i32 = 10;
@@ -23,7 +23,7 @@ pub fn threads() {
 }
 
 // This is the `main` thread
-pub fn threads_map_reduce() {
+pub fn map_reduce() {
   use std::thread;
 
   // This is our data to process.
@@ -119,18 +119,18 @@ pub fn threads_map_reduce() {
   println!("Final sum result: {}", final_result);
 }
 
-pub fn improved_threads_map_reduce() {
+pub fn improved_map_reduce() {
   use std::str;
   use std::thread;
 
   let data = "86967897737416471853297327050364959\
-11861322575564723963297542624962850\
-70856234701860851907960690014725639\
-38397966707106094172783238747669219\
-52380795257888236525459303330302837\
-58495327135744041048897885734297812\
-69920216438980873548808413720956532\
-16278424637452589860345374828574668";
+              11861322575564723963297542624962850\
+              70856234701860851907960690014725639\
+              38397966707106094172783238747669219\
+              52380795257888236525459303330302837\
+              58495327135744041048897885734297812\
+              69920216438980873548808413720956532\
+              16278424637452589860345374828574668";
   // https://crates.io/crates/num_cpus
   let cpus = num_cpus::get();
 
