@@ -21,6 +21,7 @@ Practice Rust Programming Language
 				- [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko))
 			- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example))
 		- Use Rust
+			- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 			- [The Standard Library](https://doc.rust-lang.org/std/index.html)
 			- [The Rustc Book](https://doc.rust-lang.org/rustc/index.html)
 			- [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
