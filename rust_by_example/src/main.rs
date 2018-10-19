@@ -19,4 +19,5 @@ fn main() {
   rust_by_example::run_error_handling();
   rust_by_example::run_std_library_types();
   rust_by_example::run_std_misc();
+  rust_by_example::run_unsafe_operations();
 }

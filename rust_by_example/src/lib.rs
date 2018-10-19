@@ -21,6 +21,7 @@ mod std_misc;
 pub mod testing;
 mod traits;
 mod types;
+mod unsafe_operations;
 mod variable_bindings;
 
 pub fn run_hello_world() {
@@ -183,4 +184,9 @@ pub fn run_std_misc() {
   std_misc::run_child_processes();
   std_misc::filesystem_operations();
   std_misc::foreign_function_interface();
+}
+
+pub fn run_unsafe_operations() {
+  unsafe_operations::raw_pointers();
+  unsafe_operations::calling_unsafe_functions();
 }
