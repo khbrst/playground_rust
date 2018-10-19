@@ -14,7 +14,7 @@ Practice Rust Programming Language
 # References
 
 - [Rust Programming Language - Official site](https://www.rust-lang.org)
-	- [Rust Documentation](https://www.rust-lang.org/en-US/documentation.html)([한글](https://www.rust-lang.org/ko-KR/documentation.html)) and [Documentation](https://doc.rust-lang.org/)
+	- [Rust Documentation](https://www.rust-lang.org/en-US/documentation.html)([한글](https://www.rust-lang.org/ko-KR/documentation.html)) and [another documentation index](https://doc.rust-lang.org/)
 		- Learn Rust
 			- [Book](https://doc.rust-lang.org/book/)
 				- [1판 한글 번역](https://www.penflip.com/sarojaba/rust-doc-korean)
