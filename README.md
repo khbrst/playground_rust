@@ -6,10 +6,11 @@ Practice Rust Programming Language
 
 ## Roadmap
 
-- [Book](https://doc.rust-lang.org/book/): [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko)): Completed
-- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example)): Work In Progress
-	- `iter` vs `into_iter`
+- [x] [Book](https://doc.rust-lang.org/book/): [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko))
+- [x] [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example))
+	- [ ] `iter` vs `into_iter`
 		- [What is the difference between iter and into_iter? - Stack Overflow](https://stackoverflow.com/a/34745885/10358228)
+- [ ] [Frequently Asked Questions](https://www.rust-lang.org/en-US/faq.html)([한글](https://www.rust-lang.org/ko-KR/faq.html))
 
 # References
 
