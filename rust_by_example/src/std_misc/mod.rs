@@ -59,7 +59,7 @@ pub fn path() {
 
   // `join` merges a path with a byte container using the OS specific
   // separator, and returns the new path
-  let new_path = path.join("a").join("b");
+  let new_path = path.join("static").join("a").join("b");
 
   // Convert the path into a string slice
   match new_path.to_str() {
@@ -166,6 +166,10 @@ pub fn filesystem_operations() {
   println!("`rmdir a/c/d`");
   // Remove an empty directory, returns `io::Result<()>`
   fs::remove_dir("a/c/d").unwrap_or_else(|why| {
+    println!("! {:?}", why.kind());
+  });
+
+  fs::rename(Path::new("a"), Path::new("static").join("a")).unwrap_or_else(|why| {
     println!("! {:?}", why.kind());
   });
 }

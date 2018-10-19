@@ -41,7 +41,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   use std::io::prelude::*;
   use std::path::Path;
 
-  let path = Path::new("out/lorem_ipsum.txt");
+  let path = Path::new("static/out/lorem_ipsum.txt");
   let display = path.display();
 
   // Open a file in write-only mode, returns `io::Result<File>`
