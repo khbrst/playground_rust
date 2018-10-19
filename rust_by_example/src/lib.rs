@@ -1,3 +1,8 @@
+// externing crate for test-only use
+#[cfg(test)]
+#[macro_use]
+extern crate pretty_assertions;
+
 mod attributes;
 mod conversion;
 mod custom_types;

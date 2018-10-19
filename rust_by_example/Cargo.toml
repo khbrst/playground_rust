@@ -5,3 +5,7 @@ authors = ["Yoon Youngho <khbrst@gmail.com>"]
 
 [dependencies]
 num_cpus = "1.8.0"
+
+# standard crate data is left out
+[dev-dependencies]
+pretty_assertions = "0.5.1"
