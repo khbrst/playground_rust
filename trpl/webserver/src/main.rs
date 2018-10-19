@@ -39,7 +39,8 @@ fn handle_connection(mut stream: TcpStream) {
     ("HTTP/1.1 404 NOT FOUND\r\n\r\n", "404.html")
   };
 
-  let mut file = File::open(filename).unwrap();
+  let path = String::from("static/") + filename;
+  let mut file = File::open(path).unwrap();
   let mut contents = String::new();
 
   file.read_to_string(&mut contents).unwrap();

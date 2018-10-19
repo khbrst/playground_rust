@@ -5,7 +5,7 @@ pub fn do_open() {
   use std::path::Path;
 
   // Create a path to the desired file
-  let path = Path::new("hello.txt");
+  let path = Path::new("static").join("hello.txt");
   let display = path.display();
 
   // Open the path in read-only mode, returns `io::Result<File>`
