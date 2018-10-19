@@ -13,6 +13,7 @@ mod primitives;
 mod scoping_rules;
 mod std_library_types;
 mod std_misc;
+pub mod testing;
 mod traits;
 mod types;
 mod variable_bindings;
