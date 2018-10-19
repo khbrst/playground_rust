@@ -171,4 +171,7 @@ pub fn run_std_library_types() {
 
 pub fn run_std_misc() {
   std_misc::run_threads();
+  std_misc::channels();
+  std_misc::path();
+  std_misc::run_fileio();
 }
