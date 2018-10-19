@@ -110,66 +110,62 @@ pub fn filesystem_operations() {
     }
   }
 
-  println!("`mkdir a`");
+  println!("`mkdir static/a`");
   // Create a directory, returns `io::Result<()>`
-  match fs::create_dir("a") {
+  match fs::create_dir("static/a") {
     Err(why) => println!("! {:?}", why.kind()),
     Ok(_) => {}
   }
 
-  println!("`echo hello > a/b.txt`");
+  println!("`echo hello > static/a/b.txt`");
   // The previous match can be simplified using the `unwrap_or_else` method
-  echo("hello", &Path::new("a/b.txt")).unwrap_or_else(|why| {
+  echo("hello", &Path::new("static/a/b.txt")).unwrap_or_else(|why| {
     println!("! {:?}", why.kind());
   });
 
-  println!("`mkdir -p a/c/d`");
+  println!("`mkdir -p static/a/c/d`");
   // Recursively create a directory, returns `io::Result<()>`
-  fs::create_dir_all("a/c/d").unwrap_or_else(|why| {
+  fs::create_dir_all("static/a/c/d").unwrap_or_else(|why| {
     println!("! {:?}", why.kind());
   });
 
-  println!("`touch a/c/e.txt`");
-  touch(&Path::new("a/c/e.txt")).unwrap_or_else(|why| {
+  println!("`touch static/a/c/e.txt`");
+  touch(&Path::new("static/a/c/e.txt")).unwrap_or_else(|why| {
     println!("! {:?}", why.kind());
   });
 
-  println!("`ln -s ../b.txt a/c/b.txt`");
+  println!("`ln -s ../b.txt static/a/c/b.txt`");
   // Create a symbolic link, returns `io::Result<()>`
   if cfg!(target_family = "unix") {
-    unix::fs::symlink("../b.txt", "a/c/b.txt").unwrap_or_else(|why| {
+    unix::fs::symlink("../b.txt", "static/a/c/b.txt").unwrap_or_else(|why| {
       println!("! {:?}", why.kind());
     });
   }
 
-  println!("`cat a/c/b.txt`");
-  match cat(&Path::new("a/c/b.txt")) {
+  println!("`cat static/a/c/b.txt`");
+  match cat(&Path::new("static/a/c/b.txt")) {
     Err(why) => println!("! {:?}", why.kind()),
     Ok(s) => println!("> {}", s),
   }
 
-  println!("`ls a`");
+  println!("`ls static/a`");
   // Read the contents of a directory, returns `io::Result<Vec<Path>>`
-  match fs::read_dir("a") {
+  match fs::read_dir("static/a") {
     Err(why) => println!("! {:?}", why.kind()),
     Ok(paths) => for path in paths {
       println!("> {:?}", path.unwrap().path());
     },
   }
 
-  println!("`rm a/c/e.txt`");
+  println!("`rm static/a/c/e.txt`");
   // Remove a file, returns `io::Result<()>`
-  fs::remove_file("a/c/e.txt").unwrap_or_else(|why| {
+  fs::remove_file("static/a/c/e.txt").unwrap_or_else(|why| {
     println!("! {:?}", why.kind());
   });
 
-  println!("`rmdir a/c/d`");
+  println!("`rmdir static/a/c/d`");
   // Remove an empty directory, returns `io::Result<()>`
-  fs::remove_dir("a/c/d").unwrap_or_else(|why| {
-    println!("! {:?}", why.kind());
-  });
-
-  fs::rename(Path::new("a"), Path::new("static").join("a")).unwrap_or_else(|why| {
+  fs::remove_dir("static/a/c/d").unwrap_or_else(|why| {
     println!("! {:?}", why.kind());
   });
 }
