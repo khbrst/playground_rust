@@ -1,6 +1,6 @@
 # Rust Practice
 
-[![Build Status](https://travis-ci.com/khbrst/playground_rust.svg?branch=master)](https://travis-ci.com/khbrst/playground_rust)
+[![Build Status](https://travis-ci.com/khbrst/rust_practice.svg?branch=master)](https://travis-ci.com/khbrst/rust_practice)
 
 Practice Rust Programming Language
 
