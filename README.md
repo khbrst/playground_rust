@@ -14,12 +14,14 @@ Practice Rust Programming Language
 # References
 
 - [Rust Programming Language - Official site](https://www.rust-lang.org)
-	- [Documentation](https://doc.rust-lang.org/)
+	- [Rust Documentation](https://www.rust-lang.org/en-US/documentation.html)([한글](https://www.rust-lang.org/ko-KR/documentation.html)) and [Documentation](https://doc.rust-lang.org/)
 		- Learn Rust
 			- [Book](https://doc.rust-lang.org/book/)
 				- [1판 한글 번역](https://www.penflip.com/sarojaba/rust-doc-korean)
 				- [2판 한글 번역](https://rinthel.github.io/rust-lang-book-ko/)([GitHub](https://github.com/rinthel/rust-lang-book-ko))
 			- [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example))
+			- [Frequently Asked Questions](https://www.rust-lang.org/en-US/faq.html)([한글](https://www.rust-lang.org/ko-KR/faq.html))
+			- [rust-learning](https://github.com/ctjhoa/rust-learning)
 		- Use Rust
 			- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 			- [The Standard Library](https://doc.rust-lang.org/std/index.html)
@@ -35,6 +37,8 @@ Practice Rust Programming Language
 	- [Friends of Rust](https://www.rust-lang.org/friends.html)
 - Package
 	- [Cargo: packages for Rust](https://crates.io/)
+		- [The Cargo Book](https://doc.rust-lang.org/cargo/)
+		- [Docs.rs](https://docs.rs/)
 	- [GitHub](https://github.com)
 		- [Rust-lang](https://github.com/rust-lang)
 		- [Rust Topic](https://github.com/topics/rust)
