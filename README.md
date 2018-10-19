@@ -42,12 +42,11 @@ Practice Rust Programming Language
 			- [The Unstable Book](https://doc.rust-lang.org/unstable-book/index.html)
 	- [Rust Platform Support](https://forge.rust-lang.org/platform-support.html)
 	- [Friends of Rust](https://www.rust-lang.org/friends.html)
-- Package
-	- [Cargo: packages for Rust](https://crates.io/)
-		- [Docs.rs](https://docs.rs/)
-	- [GitHub](https://github.com)
-		- [Rust-lang](https://github.com/rust-lang)
-		- [Rust Topic](https://github.com/topics/rust)
+- [Cargo: packages for Rust](https://crates.io/)
+	- [Docs.rs](https://docs.rs/)
+- Packages
+	- [Rust-lang](https://github.com/rust-lang)
+	- [GitHub Rust Topic](https://github.com/topics/rust)
 	- [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
 	- [RxRust](https://github.com/ReactiveX/RxRust)
 - Article
