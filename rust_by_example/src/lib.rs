@@ -174,4 +174,7 @@ pub fn run_std_misc() {
   std_misc::channels();
   std_misc::path();
   std_misc::run_fileio();
+  std_misc::run_child_processes();
+  std_misc::filesystem_operations();
+  std_misc::foreign_function_interface();
 }
