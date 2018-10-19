@@ -11,6 +11,12 @@ Practice Rust Programming Language
 	- [ ] `iter` vs `into_iter`
 		- [What is the difference between iter and into_iter? - Stack Overflow](https://stackoverflow.com/a/34745885/10358228)
 - [ ] [Frequently Asked Questions](https://www.rust-lang.org/en-US/faq.html)([한글](https://www.rust-lang.org/ko-KR/faq.html))
+- [ ] [RxRust](https://github.com/ReactiveX/RxRust)
+- [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
+- [ ] [The Standard Library](https://doc.rust-lang.org/std/index.html)
+- [ ] [The Rustc Book](https://doc.rust-lang.org/rustc/index.html)
+- [ ] [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+- [ ] [The Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html)
 
 # References
 
@@ -38,7 +44,6 @@ Practice Rust Programming Language
 	- [Friends of Rust](https://www.rust-lang.org/friends.html)
 - Package
 	- [Cargo: packages for Rust](https://crates.io/)
-		- [The Cargo Book](https://doc.rust-lang.org/cargo/)
 		- [Docs.rs](https://docs.rs/)
 	- [GitHub](https://github.com)
 		- [Rust-lang](https://github.com/rust-lang)
@@ -46,9 +51,9 @@ Practice Rust Programming Language
 	- [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
 	- [RxRust](https://github.com/ReactiveX/RxRust)
 - Article
-	- [Rust Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language))
-	- [Rust - 나무위키](https://namu.wiki/w/Rust)
-	- [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
-	- [Are we web yet? - Rust](https://www.arewewebyet.org/)
+	- [x] [Rust Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language))
+	- [x] [Rust - 나무위키](https://namu.wiki/w/Rust)
+	- [x] [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
+	- [x] [Are we web yet? - Rust](https://www.arewewebyet.org/)
 - Community
 	- [한국 러스트 사용자 그룹 - Facebook](https://www.facebook.com/groups/rustlang/)
