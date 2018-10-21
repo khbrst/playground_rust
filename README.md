@@ -10,7 +10,11 @@ Practice Rust Programming Language
 - [x] [Rust by Example](https://doc.rust-lang.org/rust-by-example/index.html)([GitHub](https://github.com/rust-lang/rust-by-example))
 	- [ ] `iter` vs `into_iter`
 		- [What is the difference between iter and into_iter? - Stack Overflow](https://stackoverflow.com/a/34745885/10358228)
-- [ ] [Frequently Asked Questions](https://www.rust-lang.org/en-US/faq.html)([한글](https://www.rust-lang.org/ko-KR/faq.html))
+- [x] [Frequently Asked Questions](https://www.rust-lang.org/en-US/faq.html)([한글](https://www.rust-lang.org/ko-KR/faq.html))
+	- [ ] [LLVM](https://llvm.org/)
+		- [ ] [LLVM - Wikipedia](https://en.wikipedia.org/wiki/LLVM)([한글](https://ko.wikipedia.org/wiki/LLVM))
+		- [x] [LLVM - 나무위키](https://namu.wiki/w/LLVM)
+	- [ ] [Hygienic macro - Wikipedia](https://en.wikipedia.org/wiki/Hygienic_macro)
 - [ ] [RxRust](https://github.com/ReactiveX/RxRust)
 - [ ] [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook/)
 - [ ] [The Standard Library](https://doc.rust-lang.org/std/index.html)
@@ -49,11 +53,25 @@ Practice Rust Programming Language
 	- [GitHub Rust Topic](https://github.com/topics/rust)
 	- [Awesome Rust](https://github.com/rust-unofficial/awesome-rust)
 	- [RxRust](https://github.com/ReactiveX/RxRust)
-	- [The Neon Project](https://www.neon-bindings.com/)([GitHub](https://github.com/neon-bindings/neon)): Rust + Node.js
+	- [Rust OS Projects](https://wiki.osdev.org/Rust)
+	- Mobile
+		- [Rust on Android](https://github.com/tomaka/android-rs-glue)
+		- [Rust on iOS](https://www.bignerdranch.com/blog/building-an-ios-app-in-rust-part-1/)
+	- Web
+		- [Are we web yet? - Rust](https://www.arewewebyet.org/)
+		- [The Neon Project](https://www.neon-bindings.com/)([GitHub](https://github.com/neon-bindings/neon)): Rust + Node.js
+		- [The Rusty Web](https://davidmcneil.gitbooks.io/the-rusty-web/)(Experimental: [WebAssembly](https://webassembly.org/) and [asm.js](http://asmjs.org/))
 - Article
 	- [x] [Rust Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language))
 	- [x] [Rust - 나무위키](https://namu.wiki/w/Rust)
 	- [x] [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
-	- [x] [Are we web yet? - Rust](https://www.arewewebyet.org/)
+- Development environment
+	- OS X
+		- (VS Code + Rusty Code + Native Debug) + (Rust + Racer + GDB)
+			- [Rust development using VS Code on OS X, debugging included.](https://medium.com/@royalstream/rust-development-using-vs-code-on-os-x-debugging-included-bc10c9863777)
+		- (VS Code + Rusty Code(rls) + Native Debug) + (Rust + GDB)
+			- [Visual Studio Code를 이용한 Rust 개발환경 꾸며보기 - Rinthel's note](https://rinthel.github.io/2017/08/20/rust-vscode-macos/)
+		- Rust + LLDB
+			- [Debugging Rust programs with lldb on MacOS](https://bryce.fisher-fleig.org/blog/debugging-rust-programs-with-lldb/index.html)
 - Community
 	- [한국 러스트 사용자 그룹 - Facebook](https://www.facebook.com/groups/rustlang/)
