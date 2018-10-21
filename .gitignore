@@ -306,3 +306,4 @@ __pycache__/
 
 /static/out/lorem_ipsum.txt
 /static/a
+/.vscode
