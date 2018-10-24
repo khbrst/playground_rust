@@ -61,9 +61,9 @@ Practice Rust Programming Language
 		- [The Neon Project](https://www.neon-bindings.com/)([GitHub](https://github.com/neon-bindings/neon)): Rust + Node.js
 		- [The Rusty Web](https://davidmcneil.gitbooks.io/the-rusty-web/)(Experimental: [WebAssembly](https://webassembly.org/) and [asm.js](http://asmjs.org/))
 - Article
-	- [x] [Rust Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language))
-	- [x] [Rust - 나무위키](https://namu.wiki/w/Rust)
-	- [x] [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
+	- [Rust Wikipedia](https://en.wikipedia.org/wiki/Rust_(programming_language))
+	- [Rust - 나무위키](https://namu.wiki/w/Rust)
+	- [Stack Overflow Annual Developer Survey](https://insights.stackoverflow.com/survey)
 - Development environment
 	- OS X
 		- (VS Code + Rusty Code + Native Debug) + (Rust + Racer + GDB)
