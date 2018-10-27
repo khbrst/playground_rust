@@ -21,7 +21,61 @@ Practice Rust Programming Language
 - [ ] [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
 - [ ] [The Rustdoc Book](https://doc.rust-lang.org/rustdoc/index.html)
 
-# References
+### Backend
+
+- [x] Basics
+- [x] Package Manager
+- [ ] Standards and Best Practices
+- [ ] Testing framework
+- [ ] RDBMS
+  - [ ] [MySQL](https://www.mysql.com/)
+  - [ ] [MariaDB](https://mariadb.com/)
+  - [ ] [PostgreSQL](https://www.postgresql.org/)
+- [ ] Backend framework
+- [ ] NoSQL
+  - [ ] [MongoDB](https://www.mongodb.com/)
+  - [ ] [Apache Cassandra](http://cassandra.apache.org/)
+- [ ] Caching
+  - [ ] [memcached](https://memcached.org/)
+  - [ ] [Redis](https://redis.io/)
+- [ ] Authentication / Authorization
+  - [ ] OAuth
+  - [ ] Basic Authentication
+  - [ ] Token Authentication
+  - [ ] JWT
+  - [ ] OpenID
+- [ ] Message Brokers
+  - [ ] RabbitMQ
+  - [ ] Kafka
+- [ ] Search Engine
+  - [ ] ElasticSearch
+  - [ ] Solr
+  - [ ] Sphinx
+- [ ] Docker
+- [ ] Web Server
+  - [ ] Apache
+  - [ ] Nginx
+- [ ] Web Sockets
+- [ ] GraphQL and Graph Databases
+- [ ] Profiling
+- [ ] Static Analysis
+- [ ] DDD
+- [ ] SOAP
+- [ ] serverless
+- [ ] Micro Services
+  - [ ] [Microservice Architecture](https://microservices.io/patterns/microservices.html)
+  - [ ] [A pattern language for microservices](https://microservices.io/patterns/index.html)
+  - [ ] Circuit Breaker
+    - [ ] [Circuit breaker design pattern - Wikipedia](https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern)
+    - [ ] [Circuit Breaker - Microservices.io](https://microservices.io/patterns/reliability/circuit-breaker.html)
+    - [ ] [CircuitBreaker - Martin Fowler](https://martinfowler.com/bliki/CircuitBreaker.html)
+  - [ ] API Gateway
+    - [ ] Netflix/Zuul
+      - [ ] [GitHub Wiki](https://github.com/Netflix/zuul/wiki)
+      - [x] [배민 API GATEWAY - spring cloud zuul 적용기 - 우아한형제들 기술 블로그](http://woowabros.github.io/r&d/2017/06/13/apigateway.html)
+    - [ ] API Gateway vs Reverse Proxy
+
+## References
 
 - [Rust Programming Language - Official site](https://www.rust-lang.org)
 	- [Rust Documentation](https://www.rust-lang.org/en-US/documentation.html)([한글](https://www.rust-lang.org/ko-KR/documentation.html)) and [another documentation index](https://doc.rust-lang.org/)
