@@ -70,9 +70,6 @@ Practice Rust Programming Language
     - [ ] [Circuit Breaker - Microservices.io](https://microservices.io/patterns/reliability/circuit-breaker.html)
     - [ ] [CircuitBreaker - Martin Fowler](https://martinfowler.com/bliki/CircuitBreaker.html)
   - [ ] API Gateway
-    - [ ] Netflix/Zuul
-      - [ ] [GitHub Wiki](https://github.com/Netflix/zuul/wiki)
-      - [x] [배민 API GATEWAY - spring cloud zuul 적용기 - 우아한형제들 기술 블로그](http://woowabros.github.io/r&d/2017/06/13/apigateway.html)
     - [ ] API Gateway vs Reverse Proxy
 
 ## References
