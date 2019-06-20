@@ -1,6 +1,4 @@
 pub fn before_handling() {
-  use std;
-
   fn double_first(vec: Vec<&str>) -> i32 {
     let first = vec.first().unwrap(); // Generate error 1
     2 * first.parse::<i32>().unwrap() // Generate error 2
@@ -60,7 +58,6 @@ pub fn pulling_results_out_of_options_with_combinators() {
 }
 
 pub fn defining_an_error_type() {
-  use std;
   use std::error;
   use std::fmt;
 
@@ -122,7 +119,6 @@ pub fn defining_an_error_type() {
 }
 
 pub fn boxing_errors() {
-  use std;
   use std::error;
   use std::fmt;
 
@@ -174,7 +170,6 @@ pub fn boxing_errors() {
 }
 
 pub fn other_uses_of_question_mark() {
-  use std;
   use std::error;
   use std::fmt;
 
@@ -226,7 +221,6 @@ pub fn other_uses_of_question_mark() {
 }
 
 pub fn wrapping_errors() {
-  use std;
   use std::error;
   use std::fmt;
   use std::num::ParseIntError;
