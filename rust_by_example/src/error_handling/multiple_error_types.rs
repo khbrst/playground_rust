@@ -86,7 +86,7 @@ pub fn defining_an_error_type() {
       "invalid first item to double"
     }
 
-    fn cause(&self) -> Option<&error::Error> {
+    fn cause(&self) -> Option<&dyn error::Error> {
       // Generic error, underlying cause isn't tracked.
       None
     }
@@ -123,7 +123,7 @@ pub fn boxing_errors() {
   use std::fmt;
 
   // Change the alias to `Box<error::Error>`.
-  type Result<T> = std::result::Result<T, Box<error::Error>>;
+  type Result<T> = std::result::Result<T, Box<dyn error::Error>>;
 
   #[derive(Debug, Clone)]
   struct EmptyVec;
@@ -139,7 +139,7 @@ pub fn boxing_errors() {
       "invalid first item to double"
     }
 
-    fn cause(&self) -> Option<&error::Error> {
+    fn cause(&self) -> Option<&dyn error::Error> {
       // Generic error, underlying cause isn't tracked.
       None
     }
@@ -174,7 +174,7 @@ pub fn other_uses_of_question_mark() {
   use std::fmt;
 
   // Change the alias to `Box<error::Error>`.
-  type Result<T> = std::result::Result<T, Box<error::Error>>;
+  type Result<T> = std::result::Result<T, Box<dyn error::Error>>;
 
   #[derive(Debug)]
   struct EmptyVec;
@@ -190,7 +190,7 @@ pub fn other_uses_of_question_mark() {
       "invalid first item to double"
     }
 
-    fn cause(&self) -> Option<&error::Error> {
+    fn cause(&self) -> Option<&dyn error::Error> {
       // Generic error, underlying cause isn't tracked.
       None
     }
@@ -254,7 +254,7 @@ pub fn wrapping_errors() {
       }
     }
 
-    fn cause(&self) -> Option<&error::Error> {
+    fn cause(&self) -> Option<&dyn error::Error> {
       match *self {
         DoubleError::EmptyVec => None,
         // The cause is the underlying implementation error type. Is implicitly

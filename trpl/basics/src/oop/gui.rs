@@ -31,7 +31,7 @@ impl Draw for SelectBox {
 }
 
 pub struct Screen {
-  pub components: Vec<Box<Draw>>,
+  pub components: Vec<Box<dyn Draw>>,
 }
 
 impl Screen {

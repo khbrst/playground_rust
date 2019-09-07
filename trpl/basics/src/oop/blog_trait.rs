@@ -1,5 +1,5 @@
 pub struct Post {
-  state: Option<Box<State>>,
+  state: Option<Box<dyn State>>,
   content: String,
 }
 
@@ -33,8 +33,8 @@ impl Post {
 }
 
 trait State {
-  fn request_review(self: Box<Self>) -> Box<State>;
-  fn approve(self: Box<Self>) -> Box<State>;
+  fn request_review(self: Box<Self>) -> Box<dyn State>;
+  fn approve(self: Box<Self>) -> Box<dyn State>;
   fn content<'a>(&self, _post: &'a Post) -> &'a str {
     ""
   }
@@ -43,11 +43,11 @@ trait State {
 struct Draft {}
 
 impl State for Draft {
-  fn request_review(self: Box<Self>) -> Box<State> {
+  fn request_review(self: Box<Self>) -> Box<dyn State> {
     Box::new(PendingReview {})
   }
 
-  fn approve(self: Box<Self>) -> Box<State> {
+  fn approve(self: Box<Self>) -> Box<dyn State> {
     self
   }
 }
@@ -55,11 +55,11 @@ impl State for Draft {
 struct PendingReview {}
 
 impl State for PendingReview {
-  fn request_review(self: Box<Self>) -> Box<State> {
+  fn request_review(self: Box<Self>) -> Box<dyn State> {
     self
   }
 
-  fn approve(self: Box<Self>) -> Box<State> {
+  fn approve(self: Box<Self>) -> Box<dyn State> {
     Box::new(Published {})
   }
 }
@@ -67,11 +67,11 @@ impl State for PendingReview {
 struct Published {}
 
 impl State for Published {
-  fn request_review(self: Box<Self>) -> Box<State> {
+  fn request_review(self: Box<Self>) -> Box<dyn State> {
     self
   }
 
-  fn approve(self: Box<Self>) -> Box<State> {
+  fn approve(self: Box<Self>) -> Box<dyn State> {
     self
   }
 

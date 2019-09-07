@@ -337,13 +337,13 @@ pub fn closure_input_function() {
 }
 
 pub fn closure_as_output_parameter() {
-  fn create_fn() -> Box<Fn()> {
+  fn create_fn() -> Box<dyn Fn()> {
     let text = "Fn".to_owned();
 
     Box::new(move || println!("This is a: {}", text))
   }
 
-  fn create_fnmut() -> Box<FnMut()> {
+  fn create_fnmut() -> Box<dyn FnMut()> {
     let text = "FnMut".to_owned();
 
     Box::new(move || println!("This is a: {}", text))

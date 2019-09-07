@@ -44,6 +44,7 @@ pub fn test_patterns() {
   println!("");
 }
 
+#[allow(unused_must_use)]
 pub fn test_advanced() {
   println!("* test_advanced");
   advanced::unsafe_rust::create_raw_pointer();

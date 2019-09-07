@@ -12,6 +12,6 @@ pub fn use_function_pointer() {
   println!("The answer is: {}", answer);
 }
 
-pub fn returns_closure() -> Box<Fn(i32) -> i32> {
+pub fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
   Box::new(|x| x + 1)
 }

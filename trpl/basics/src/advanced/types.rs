@@ -1,6 +1,6 @@
 #[allow(unused_variables)]
 pub fn use_type_alias() {
-  type Thunk = Box<Fn() + Send + 'static>;
+  type Thunk = Box<dyn Fn() + Send + 'static>;
 
   let f: Thunk = Box::new(|| println!("hi"));
 }

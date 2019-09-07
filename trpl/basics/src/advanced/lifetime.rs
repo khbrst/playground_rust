@@ -34,5 +34,5 @@ pub fn lifetime_of_trait_object() {
 
   let num = 5;
 
-  let obj = Box::new(Ball { diameter: &num }) as Box<Red>;
+  let obj = Box::new(Ball { diameter: &num }) as Box<dyn Red>;
 }
